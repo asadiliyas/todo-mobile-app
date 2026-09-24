@@ -2,7 +2,7 @@
 
 A task manager built from a Figma mobile design, for the DigiAccel SDE‑1 (MERN stack) take-home assignment. Create, edit, complete and search tasks; tasks are organised into Monday–Sunday weeks with an open/completed summary per week.
 
-**Live demo:** <!-- LIVE_URL --> · **Figma:** [To-Do List Mobile app](https://www.figma.com/design/mz2PJoTwa5DxYrdrFPem3f/To-Do-List-Mobile-app?node-id=0-1)
+**Live demo:** [todo-mobile-app-alpha.vercel.app](https://todo-mobile-app-alpha.vercel.app) · **Figma:** [To-Do List Mobile app](https://www.figma.com/design/mz2PJoTwa5DxYrdrFPem3f/To-Do-List-Mobile-app?node-id=0-1)
 
 ## Tech stack
 
