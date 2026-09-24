@@ -1,0 +1,12 @@
+{
+  "name": "To-Do List",
+  "short_name": "To-Do",
+  "description": "Manage what you have to do, and don't forget your plans.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8fc",
+  "theme_color": "#4c53e0",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

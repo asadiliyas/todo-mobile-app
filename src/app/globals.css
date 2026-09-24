@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f8fc;
+  --foreground: #14162b;
+
+  /* Brand palette approximated from the Figma screenshots (no Figma dev
+     token was available for this build — see README "Design decisions"). */
+  --color-brand-50: #eef1ff;
+  --color-brand-100: #e2e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4c53e0;
+  --color-brand-700: #3f3fc4;
+  --color-brand-800: #34349e;
+  --color-brand-900: #2c2d7a;
+
+  --color-complete-bg: #edeffd;
+  --color-complete-icon: #4c53e0;
+
+  --color-pending-bg: #fdecec;
+  --color-pending-icon: #ea4b4b;
+
+  --color-priority-low: #22c55e;
+  --color-priority-medium: #f59e0b;
+  --color-priority-high: #ef4444;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+
+  --color-complete-bg: var(--color-complete-bg);
+  --color-complete-icon: var(--color-complete-icon);
+  --color-pending-bg: var(--color-pending-bg);
+  --color-pending-icon: var(--color-pending-icon);
+
+  --color-priority-low: var(--color-priority-low);
+  --color-priority-medium: var(--color-priority-medium);
+  --color-priority-high: var(--color-priority-high);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  overscroll-behavior-y: none;
+  padding-top: var(--safe-top);
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility pb-safe {
+  padding-bottom: var(--safe-bottom);
+}
