@@ -133,14 +133,14 @@ export function TaskForm({ task, defaultDate, onSubmit, onCancel, isSubmitting, 
       <div>
         <span className="mb-1.5 block text-sm font-medium text-slate-500">Set Time</span>
         <div className="grid grid-cols-2 gap-3">
-          <TextInput label="" aria-label="Start time" type="time" placeholder="Start" error={errors.startTime?.message} {...register("startTime")} />
-          <TextInput label="" aria-label="Ends" type="time" placeholder="Ends" error={errors.endTime?.message} {...register("endTime")} />
+          <TextInput label="Start" type="time" error={errors.startTime?.message} {...register("startTime")} />
+          <TextInput label="Ends" type="time" error={errors.endTime?.message} {...register("endTime")} />
         </div>
       </div>
 
       <TextInput label="Set Date" type="date" error={errors.date?.message} {...register("date")} />
 
-      <TextArea label="Description" placeholder="Add description" error={errors.description?.message} {...register("description")} />
+      <TextArea label="Description" placeholder="Add Description" error={errors.description?.message} {...register("description")} />
 
       <div className="flex gap-3 pt-1">
         <Button type="button" variant="ghost" size="lg" className="flex-1" onClick={onCancel}>
