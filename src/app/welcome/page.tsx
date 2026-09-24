@@ -14,9 +14,9 @@ export default function WelcomePage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col bg-background md:items-center md:justify-center md:py-10">
+    <main className="flex min-h-dvh flex-col bg-background md:items-center md:justify-center md:py-10">
       <div className="flex w-full flex-1 flex-col overflow-hidden bg-white md:min-h-[720px] md:max-w-sm md:flex-none md:rounded-[32px] md:shadow-xl md:ring-1 md:ring-slate-100">
-        <div className="relative flex h-[52vh] min-h-[300px] shrink-0 items-end overflow-hidden bg-brand-600 md:h-[380px]">
+        <div className="relative flex h-[52dvh] min-h-75 shrink-0 items-end overflow-hidden bg-brand-600 md:h-95">
           <span
             className="absolute -top-16 -right-14 h-56 w-56 rounded-full border-[28px] border-white/15"
             aria-hidden

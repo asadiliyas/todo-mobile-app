@@ -26,7 +26,7 @@ export default function SearchPage() {
   const { data: results, isLoading, isError, refetch } = useSearchTasks(query);
 
   return (
-    <main className="mx-auto min-h-screen max-w-md px-4 pt-6 md:max-w-2xl md:pt-10">
+    <main className="mx-auto min-h-dvh max-w-md px-4 pt-6 md:max-w-2xl md:pt-10">
       <div className="flex items-center gap-3">
         <Link
           href="/"

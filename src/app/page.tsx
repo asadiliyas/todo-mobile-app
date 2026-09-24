@@ -99,7 +99,7 @@ function HomeContent() {
   const noTasksAtAllThisWeek = (weekTasks?.length ?? 0) === 0;
 
   return (
-    <main className="min-h-screen pb-28 md:pb-12">
+    <main className="min-h-dvh pb-28 md:pb-12">
       <div className="mx-auto max-w-md px-4 pt-6 md:max-w-5xl md:px-8 md:pt-10">
         <header className="mb-5 flex items-center justify-between md:mb-8">
           <div>

@@ -86,7 +86,7 @@ export function Sheet({ open, onClose, title, children, footer }: SheetProps) {
                 : { type: "spring", bounce: 0.15, duration: 0.5 }
             }
             className={cn(
-              "relative z-10 flex max-h-[90vh] w-full flex-col bg-white shadow-xl outline-none",
+              "relative z-10 flex max-h-[90dvh] w-full flex-col bg-white shadow-xl outline-none",
               "rounded-t-3xl pb-safe",
               "md:m-4 md:max-w-md md:rounded-3xl",
             )}
